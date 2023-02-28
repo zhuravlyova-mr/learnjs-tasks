@@ -1,0 +1,15 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test4.js"></script>
+<script>
+
+  function getDateAgo(date, days) {
+      let dateAgo = new Date(date);
+      dateAgo.setDate(dateAgo.getDate() - days);
+
+      return dateAgo.getDate();
+  }
+
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test2.js"></script>
+<script>
+
+function topSalary(salaries) {
+    let employees = Object.entries(salaries);
+    let maxSalary = 0, maxEmployee = null;
+    
+    for (let [employee, salary] of employees) {
+        if (salary > maxSalary) {
+            maxSalary = salary;
+            maxEmployee = employee;
+        }
+    }
+
+    return maxEmployee;
+}
+
+
+</script>
+
+</html>

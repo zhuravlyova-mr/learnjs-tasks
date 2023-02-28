@@ -1,0 +1,14 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test5.js"></script>
+<script>
+
+  function getLastDayOfMonth(year, month) {
+      let date = new Date(year, month+1, 1);
+      date.setDate(date.getDate() - 1);
+      return date.getDate();
+  }
+
+</script>
+
+</html>

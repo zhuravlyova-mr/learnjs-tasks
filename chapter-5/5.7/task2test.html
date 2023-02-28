@@ -1,0 +1,16 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test2.js"></script>
+<script>
+
+  function aclean(arr) {
+    let words = new Map();
+    for (let elem of arr) {
+        words.set(elem.toLowerCase().split('').sort().join(''), elem); 
+    }
+    return Array.from( words.values() );
+  }
+  
+</script>
+
+</html>
